@@ -389,3 +389,36 @@ body {
     -webkit-transition-duration: .6s;
     transition-duration: .6s;
 }
+-------------------------------------- 
+//BUTTON 5
+.fifth {
+  border-color: $purple;
+  // border: 0;
+  border-radius: 0;
+  color: $purple;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 150ms ease-in-out;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: $purple;
+    z-index: -1;
+    transition: width 150ms ease-in-out;
+  }
+  
+  &:hover {
+    color: #fff;
+    &:after {
+      width: 110%;
+    }
+  }
+}

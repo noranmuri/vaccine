@@ -12,3 +12,13 @@
      </form>
   </body>
 </html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<body>
+        <h1> URL </h1>
+        <h3> URL : {{url}} </h3>
+</body>
+</html>
+

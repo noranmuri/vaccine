@@ -1,0 +1,27 @@
+#fileInput.html
+
+<head>
+    <title>My Home Page</title>
+  </head>
+  <body>
+     <form method="POST" action="/info">
+     <h1>url</h1>
+        URL <input name="url"  type="text" size="20"><br/>
+        <button type="submit"> Submit </button>
+     </form>
+  </body>
+  
+  
+  
+  #upload.html
+  
+  <head>
+    <title>My Home Page</title>
+  </head>
+  <body>
+     <form method="POST" action="/info">
+     <h1>url</h1>
+        URL <input name="url"  type="text" size="20"><br/>
+        <button type="submit"> Submit </button>
+     </form>
+  </body>

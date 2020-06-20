@@ -1,27 +1,26 @@
-#fileInput.html
+#fileInput.html => upload the file
 
-<head>
-    <title>My Home Page</title>
-  </head>
-  <body>
-     <form method="POST" action="/info">
-     <h1>url</h1>
-        URL <input name="url"  type="text" size="20"><br/>
-        <button type="submit"> Submit </button>
-     </form>
-  </body>
+<!DOCTYPE html PUBLIC "-//w3c//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>URL Input Page</title>
+	</head>
+	<body>
+		<h1>[ Upload the file ]</h1>
+     		<form method="POST" action="/fileUpload">
+	        	<input name="file" type="file" value="Upload"><br/>
+			<button type="submit">Start</button>    		
+		</form>
+	</body>
+</html>
   
   
   
-  #upload.html
+  #upload.html => result of fileUpload
   
-  <head>
-    <title>My Home Page</title>
-  </head>
-  <body>
-     <form method="POST" action="/info">
-     <h1>url</h1>
-        URL <input name="url"  type="text" size="20"><br/>
-        <button type="submit"> Submit </button>
-     </form>
-  </body>
+ <!DOCTYPE html PUBLIC "-//w3c//DTD HTML 4.0 Transitional//EN">
+<html>
+	<body>
+		<p> {{data}} </p>
+	</body>
+</html>

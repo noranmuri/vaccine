@@ -14,6 +14,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def start():
+	return render_template('startPage.html')
+
+@app.route('/urlInputPage')
+def urlInputPage():
+	return render_template('urlInput.html')
+
+@app.route('/fileInputPage')
+def fileInputPage():
 	return render_template('fileInput.html')
 
 @app.route('/info', methods = ['POST'])

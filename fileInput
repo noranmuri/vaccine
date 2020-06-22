@@ -3,13 +3,14 @@
 <!DOCTYPE html PUBLIC "-//w3c//DTD HTML 4.0 Transitional//EN">
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<title>URL Input Page</title>
 	</head>
 	<body>
 		<h1>[ Upload the file ]</h1>
-     		<form method="POST" action="/fileUpload">
-	        	<input name="file" type="file" value="Upload"><br/>
-			<button type="submit">Start</button>    		
+     		<form action="/fileUpload" method="POST" enctype="multipart/form-data" >
+	        	<input name="file" type="file" value="Upload"/>
+			<button type="submit"/>Start</button>    		
 		</form>
 	</body>
 </html>

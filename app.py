@@ -1,13 +1,14 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 
+import os
 import re
 from flask import Flask
 from flask import render_template
 from flask import request
 import requests
 from bs4 import BeautifulSoup
-
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 
@@ -21,19 +22,22 @@ def info():
 	if request.method == 'POST':
 		inputurl = request.form['url']
 		str = inputurl
-		url = str
-		res = requests.get(url)
+		#url = str		
+		res = requests.get(str)
 		html = BeautifulSoup(res.content, "html.parser")		
-	return render_template('info.html',url=myurl,parsed_page=html)
+		return render_template('info.html', url=inputurl, parsed_page=html)
 
-@app.route('/fileUpload',methods = ['POST'])
+@app.route('/fileUpload', methods = ['POST'])
 def fileUpload():
-	if request.method == 'POST':
+	if request.method == 'POST':	
 		f = request.files['file']
-		f.save(secure_filename(f.filename))
-		return render_template('upload.html')	
-
-
+		fo = open(f.filename,"r")
+		lines = fo.readlines()
+		url = lines[0]
+		str = url
+		res = requests.get(str)
+		html = BeautifulSoup(res.content, "html.parser")		
+		return render_template('upload.html', parsed_page=html)
 
 if __name__ == '__main__':
-	app.run();
+	app.run(debug=True);

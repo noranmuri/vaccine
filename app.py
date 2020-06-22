@@ -28,14 +28,10 @@ def info():
 
 @app.route('/fileUpload',methods = ['POST'])
 def fileUpload():
-	error = None
 	if request.method == 'POST':
-		file = request.files['file']
-		if file:
-			filename = secure_filename(file.filename)
-			file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-			a = 'file uploaded'
-	return render_template('upload.html', data = a)
+		f = request.files['file']
+		f.save(secure_filename(f.filename))
+		return render_template('upload.html')	
 
 
 

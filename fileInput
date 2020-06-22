@@ -22,6 +22,6 @@
  <!DOCTYPE html PUBLIC "-//w3c//DTD HTML 4.0 Transitional//EN">
 <html>
 	<body>
-		<p> {{data}} </p>
+		<p> {{parsed_page}} </p>
 	</body>
 </html>

@@ -16,3 +16,7 @@ open source team project
 06/20 황성윤
 -파일 업로드 받는 html 생성
 -app.py 에 업로드 된 파일 저장하는 코드 수정 중
+
+06/22 황성윤
+- 파일 업로드 받는 html(fileInput.html) 수정
+- app.py 파일 받아오는 부부 수정 완료 -> 파일을 한 줄씩 읽어서 크롤링 하는 부분 구현해야함

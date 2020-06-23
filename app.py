@@ -24,7 +24,7 @@ def urlInputPage():
 def fileInputPage():
 	return render_template('fileInput.html')
 
-@app.route('/info', methods = ['POST'])
+@app.route('/urlUpload', methods = ['POST'])
 def info():
 	error = None
 	if request.method == 'POST':
@@ -32,7 +32,7 @@ def info():
 		str = inputurl
 		#url = str		
 		res = requests.get(str)
-		html = BeautifulSoup(res.content, "html.parser")		
+		html = BeautifulSoup.find(res.content, "html.parser")		
 		return render_template('info.html', url=inputurl, parsed_page=html)
 
 @app.route('/fileUpload', methods = ['POST'])
@@ -41,11 +41,17 @@ def fileUpload():
 		f = request.files['file']
 		fo = open(f.filename,"r")
 		lines = fo.readlines()
-		url = lines[0]
-		str = url
-		res = requests.get(str)
-		html = BeautifulSoup(res.content, "html.parser")		
-		return render_template('upload.html', parsed_page=html)
+		l = len(lines)
+		htmlList = list()
+		for i in range(0,2):
+			url = lines[i]
+			str = url			
+			res = requests.get(str)
+			html = BeautifulSoup(res.content, "html.parser")
+			tmp = html.find_all(string=True)
+			htmlList.append(tmp)
+		return render_template('upload.html', parsed_page = htmlList)
+
 
 if __name__ == '__main__':
 	app.run(debug=True);

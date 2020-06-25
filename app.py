@@ -32,7 +32,9 @@ def info():
 		str = inputurl
 		#url = str		
 		res = requests.get(str)
-		html = BeautifulSoup.find(res.content, "html.parser")		
+		html = BeautifulSoup(res.content, "html.parser")
+		tmp = html.find_all(string=True)
+		
 		return render_template('info.html', url=inputurl, parsed_page=html)
 
 @app.route('/fileUpload', methods = ['POST'])

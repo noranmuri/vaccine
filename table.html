@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Crawling Table</title>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>URL LIST</td>
+				<td>COUNT</td>
+				<td>TIME</td>
+			</tr>
+
+				{% for element in list %}
+				<tr>
+					<td>URL : {{ element[0] }}</td>
+					<td>총 단어 개수 : {{ element[1] }}</td>					
+					<td>분석 시간 : time</td>						<!-- 시간 측정하는 방법-->
+					<td><!--<form method="POST" action="/urlUploadDef">			<--- button 누르면 동작되도록 구현해야함
+	      					<button type="submit">Submit</button>
+    					</form></td>-->
+					<button>분석</button></td>
+				</tr>
+				{% endfor %}
+			
+				
+		</table>
+		<!--success-->
+	</body>
+</html>

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+if [ ! -d$templates ]; then
+	mkdir $templates
+fi
+
+cp fileInputPage.html templates/
+cp inputPage.html templates/
+cp startPage.html templates/
+cp infoPage.html templates/
+cp inputPage.html templates/
+cp table.html templates/
+cp urlInputPage.html templates/
+
+
+python3 app.py

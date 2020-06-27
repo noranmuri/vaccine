@@ -34,16 +34,35 @@ def fileInputDef():
 	return render_template('fileInputPage.html')
 
 # 입력된 url을 가지고 크롤링 하여 결과를 나타내는 페이지로 연결
+def count(line):
+	
+	inputurl = request.form['url']
+	str = inputurl
+	res = requests.get(str)
+	html = BeautifulSoup(res.content,"html.parser")
+	tmp = html.get_text()
+		
+	noun = tmp.split()
+	c = Counter(noun)
+		
+	return len(c)
+			
+	
 @app.route('/urlUploadDef', methods = ['POST'])
 def urlUploadDef():
 	error = None
 	if request.method == 'POST':
+		start=time.time()
+		
 		inputurl = request.form['url']
 		str = inputurl
-		#url = str
+		state = 'success'
 		res = requests.get(str)
 		html = BeautifulSoup(res.content, "html.parser")
-		return render_template('infoPage.html', parsed_page=html)
+		
+		t = time.time() - start
+		c = count(inputurl)	
+		return render_template('infoPage.html',  c= c,t=t,state=state,inputurl=inputurl)
 
 # 단어 수 체크하여 튜플 리스트로 반환
 def countNoun(e, list):

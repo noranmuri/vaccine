@@ -17,6 +17,11 @@ open source team project
 크롤링 및 분석 처리 상태 표시 (성공/실패/중복 url 있음 등의 상태 메세지 보여줌)
 pandas의 dataFrame을 이용해서 flask에서 표를 만들어 html로 옮겨주는 시도를 해보았다.
 
+6/27 조정우
+웹페이지를 분석하는 시간을 구현함
+url크롤링 한 후 결과 html을 구현함
+url주소를 binary string 에서 string 으로 변경 시켜주는 코드를 구현함.
+
 06/20 황성윤
 -파일 업로드 받는 html 생성
 -app.py 에 업로드 된 파일 저장하는 코드 수정 중

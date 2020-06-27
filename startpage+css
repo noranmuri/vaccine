@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            StartPage
+        </title>
+	<style>
+:root {
+  background-color: rgba(165, 210, 255, .4);
+  background-image:
+    linear-gradient(90deg, rgba(165, 210, 255, .3) 50%, transparent 50%),
+    linear-gradient(rgba(165, 210, 255, .3) 50%, transparent 50%);
+  background-size: 40px 40px;
+}
+html, body {
+  height: 100%;
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+	</style>
+    </head>
+  	<body>
+	<div class ="wrap">
+		<form action = '/urlInputPageDef'>
+		<button class ="button" type="submit">URL</button>    	
+		</form>
+		<form action = '/fileInputPageDef'>
+		<button	class ="button" type="submit">FILE</button>    	
+		</form>		
+	</div>
+	</body>
+</html>

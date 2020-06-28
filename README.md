@@ -11,7 +11,6 @@ open source team project
  오늘 팀원들을 만나서 팀명을 코로나를 이겨내자는 마음으로 vaccine으로 짓고 repository를 만들었다. 다음주 월요일까지 html를 각자 구현해오기로 했다.
 
 06/20 홍지승
-
 - startpage html과 url inputpage html를 구현.
 - startpage에 url button과 file button을 css를 사용해 디자인함.
  
@@ -34,20 +33,20 @@ open source team project
 
  
 06/20 조정우
-단일 url주소 입력 텍스트를 크롤링하는 것을 구현현함
+- 단일 url주소 입력 텍스트를 크롤링하는 것을 구현현함
 
 6/23 조정우
-크롤링 및 분석 처리 상태 표시 (성공/실패/중복 url 있음 등의 상태 메세지 보여줌)
-pandas의 dataFrame을 이용해서 flask에서 표를 만들어 html로 옮겨주는 시도를 해보았다.
+- 크롤링 및 분석 처리 상태 표시 (성공/실패/중복 url 있음 등의 상태 메세지 보여줌)
+- pandas의 dataFrame을 이용해서 flask에서 표를 만들어 html로 옮겨주는 시도를 해보았다.
 
 6/27 조정우
-웹페이지를 분석하는 시간을 구현함
-url크롤링 한 후 결과 html을 구현함
-url주소를 binary string 에서 string 으로 변경 시켜주는 코드를 구현함.
+- 웹페이지를 분석하는 시간을 구현함
+- url크롤링 한 후 결과 html을 구현함
+- url주소를 binary string 에서 string 으로 변경 시켜주는 코드를 구현함.
 
 6/28 조정우
-마지막 결과 출력 화면인 table.html을 표형식으로 출력하도록 구현하였다.
-css코드와 html코드를 합쳤다.
+- 마지막 결과 출력 화면인 table.html을 표형식으로 출력하도록 구현하였다.
+- css코드와 html코드를 합쳤다.
 
 06/20 황성윤
 -파일 업로드 받는 html 생성

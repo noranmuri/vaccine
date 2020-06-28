@@ -98,7 +98,7 @@ html, body {
   <span class="label">
     Upload File
   </span>
-	        	<input name="upload" type="file" id="upload" class="upload-box" placeholder="Upload FIle"/>
+	        	<input name="file" type="file" id="upload" class="upload-box" placeholder="Upload FIle"/>
 </div>
 			<button class = "button" type="submit"/>Start</button>    		
 		</form>

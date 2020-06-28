@@ -5,7 +5,7 @@
 	<style>
 	@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 
-* {
+ {
   font-family: Roboto, sans-serif;
   padding: 0;
   margin: 0;
@@ -93,8 +93,10 @@ html, body {
     <h1>Input the url</h1>
     <h3>Click on search icon, then type your keyword.</h3>
     <div>
-	<form action="/urlUploadDef" method="POST" enctype="multipart/form-data" >
-      <input type="text" placeholder="Search . . ." required>
+	<form method="POST" action="/urlUploadDef"  enctype="multipart/form-data" >
+        <input name = "url" type="text" placeholder="Search . . ." required>
+     
+      <button type="submit">Submit</button>
 	</form>
     </div>
   </div>

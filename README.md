@@ -9,6 +9,10 @@ open source team project
 
 06/12 홍지승
  오늘 팀원들을 만나서 팀명을 코로나를 이겨내자는 마음으로 vaccine으로 짓고 repository를 만들었다. 다음주 월요일까지 html를 각자 구현해오기로 했다.
+
+06/20 홍지승
+ startpage html과 url inputpage html을 만듬
+ startpage를 css를 사용해 디자인하고 button을 누르면 연결되는 기능까지 구현.
  
 06/20 조정우
 단일 url주소 입력 텍스트를 크롤링하는 것을 구현현함

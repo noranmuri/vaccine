@@ -5,13 +5,42 @@ if [ ! -d$templates ]; then
 	mkdir $templates
 fi
 
-cp fileInputPage.html templates/
-cp inputPage.html templates/
-cp startPage.html templates/
-cp infoPage.html templates/
-cp inputPage.html templates/
-cp table.html templates/
-cp urlInputPage.html templates/
+
+if [ -e $fileInputPage.html ]; then
+	cp fileInputPage.html templates/	
+fi
+
+
+if [  -e $inputPage.html ]; then
+	cp inputPage.html templates/	
+fi
+
+
+if [  -e $startPage.html ]; then
+	cp startPage.html templates/	
+fi
+
+
+if [  -e $infoPage.html ]; then
+	cp infoPage.html templates/	
+fi
+
+if [  -e $inputPage.html ]; then
+	cp inputPage.html templates/	
+fi
+
+
+if [  -e $table.html ]; then
+	cp table.html templates/	
+fi
+
+
+if [  -e $urlInputPage.html ]; then
+	cp urlInputPage.html templates/	
+fi
+
+
+
 
 
 python3 app.py

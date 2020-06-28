@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>wordlist</title>
+	</head>
+	<body>
+		<h1>TOP 10</h1>
+		<h3>{{url}}</h3>
+     		<table>
+		<tr>
+			<td>WORD</td>
+			<td>COUNT</td>
+		</tr>	
+		{% for key in list %}
+		<tr> 
+			<td>{{key}}</td>
+			<td>{{list[key]}}</td>
+		</tr>
+		{% endfor %}
+		</table>
+	</body>
+</html>

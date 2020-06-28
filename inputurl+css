@@ -51,8 +51,8 @@ html, body {
   width: 4px;
   height: 20px;
   position: absolute;
-  top: 40px;
-  right: 2px;
+  top: 23px;
+  right: 0px;
   transform: rotate(135deg);
   box-shadow: 1px 0 #0091c2;
 }

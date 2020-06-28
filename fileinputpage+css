@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<title>URL Input Page</title>
 	<style>
-	body{ color: white;}
+	body{ color: black;}
 	h1,h2{ text-align:center;font-size: 200%;}
 :root {
   background-color: rgba(165, 210, 255, .4);

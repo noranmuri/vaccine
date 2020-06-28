@@ -26,6 +26,7 @@ pandas의 dataFrame을 이용해서 flask에서 표를 만들어 html로 옮겨�
 url크롤링 한 후 결과 html을 구현함
 url주소를 binary string 에서 string 으로 변경 시켜주는 코드를 구현함.
 
+
 06/20 황성윤
 -파일 업로드 받는 html 생성
 -app.py 에 업로드 된 파일 저장하는 코드 수정 중

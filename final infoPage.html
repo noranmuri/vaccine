@@ -1,9 +1,22 @@
 <!DOCTYPE html PUBLIC "-//w3c//DTD HTML 4.0 Transitional//EN">
 <html>
+	<style>
+  table {
+    width: 100%;
+    border: 1px solid #444444;
+  }
+  th, td {
+    border: 1px solid #444444;
+    
+  }
+</style>
+	
+	
 	<head>
 		<title>Crawling Table</title>
 	</head>
 	<body>
+		
 		<table style="text-align: center;">
 			<tr>
 				<td>URL</td>
@@ -20,15 +33,12 @@
 					<td>분석 시간 : {{t}}</td>
 					<td>state : {{state}} </td>
 					
-											<!-- 시간 측정하는 방법-->
-					<td><!--<form method="POST" action="/urlUploadDef">			<--- button 누르면 동작되도록 구현해야함
+											
+					<td><form method="POST" action="/urlUploadDef">			
 	      					<button type="submit">Submit</button>
-    					</form></td>-->
-					<button>분석</button></td>
-				</tr>
-
-				
+    					</form></td>
+					
+				</tr>	
 		</table>
-		<!--success-->
 	</body>
 </html>

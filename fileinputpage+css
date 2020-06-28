@@ -1,0 +1,63 @@
+
+<!DOCTYPE html PUBLIC "-//w3c//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>URL Input Page</title>
+	<style>
+	body{ color: white;}
+	h1,h2{ text-align:center;font-size: 200%;}
+:root {
+  background-color: rgba(165, 210, 255, .4);
+  background-image:
+    linear-gradient(90deg, rgba(165, 210, 255, .3) 50%, transparent 50%),
+    linear-gradient(rgba(165, 210, 255, .3) 50%, transparent 50%);
+  background-size: 40px 40px;
+}
+html, body {
+  height: 100%;
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 50px 100px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+</style>
+	</head>
+	<body>
+		<h1>[ Upload the file ]</h1>
+		<div class = "wrap">
+     		<form action="/fileUploadDef" method="POST" enctype="multipart/form-data" >
+	        	<input name="file" type="file" value="Upload"/>
+			<button class = "button" type="submit"/>Start</button>    		
+		</form>
+	</div>
+	</body>
+</html>

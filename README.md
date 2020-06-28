@@ -16,22 +16,18 @@ open source team project
 -startpage에 url button과 file button을 css를 사용해 디자인함.
  
 06/23 홍지승
-
 -startpage 배경화면을 디자인함.
 -css를 입힌 button을 누르면 urlinput과 fileinput page로 넘어가도록 함(startpage 완성)
 
 06/25 홍지승
-
 -url inputpage의 background와 url search box를 디자인함.
 -url inputpage에 url주소를 입력하면 크롤링되는거를 css와 연동시킴.(url inputpage 완성)
 
 06/27 홍지승
-
 -file inputpage에 button과 background 디자인을 함.
 -file inputpage에 폼 필드를 css와 연동시키는데 실패.
 
 06/28 홍지승
-
 -file inputpage에 폼 필드를 css와 연동시키는데 성공.(file inputpage 완성)
 -file 찾아서 submit하면 table이 나오는데 table의 line collapse와 background를 입힘.(table 완성)
 -info page도 위와같은 방법으로 구현(info page 완성)

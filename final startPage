@@ -5,8 +5,9 @@
             StartPage
         </title>
 	<style>
-	body{ color: white;}
-	h1,h2{ text-align:center;font-size: 200%;}
+	body{ color: black;}
+	h1,h2{ text-align:center;font-size: 230%;}
+	
 :root {
   background-color: rgba(165, 210, 255, .4);
   background-image:
@@ -16,6 +17,7 @@
 }
 html, body {
   height: 100%;
+  
 }
 
 .wrap {
@@ -25,11 +27,17 @@ html, body {
   justify-content: center;
 }
 
+
+
+
 .button {
-  width: 140px;
-  height: 45px;
+  
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 60px;
   font-family: 'Roboto', sans-serif;
-  font-size: 11px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;

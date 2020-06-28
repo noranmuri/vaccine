@@ -56,10 +56,10 @@ html, body {
 	<h1>OPEN SOURCE PROGRMAING PROJECT!</h1>
 	<h2>CLICK THE BUTTON</h2>
 	<div class ="wrap">
-		<form action = '/urlInputPageDef'>
+		<form action = '/urlInputDef'>
 		<button class ="button" type="submit">URL</button>    	
 		</form>
-		<form action = '/fileInputPageDef'>
+		<form action = '/fileInputDef'>
 		<button	class ="button" type="submit">FILE</button>    	
 		</form>		
 	</div>
